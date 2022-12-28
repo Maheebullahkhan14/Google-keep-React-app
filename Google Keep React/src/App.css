@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: dimgray; */
+}
+
+.Nav {
+  background-color:rgba(252,207,50,255) ;
+  display: flex;
+  align-items: center;
+  padding: 5px 45px;
+  color: rgba(83, 76, 76, 0.842);
+  font-family: 'Asul', sans-serif;
+
+}
+
+
+.Nav img{
+  width: 45px;
+  margin-right: 15px;
+}
+.Made{
+  text-align: center;
+  font-family: 'Asul', sans-serif;
+  position: absolute;
+  bottom: 5%;
+  right: 45%;
+  display: block;
+  
+}
+.AddNote {
+  position: relative;
+  width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  height: 230px;
+  margin: 25px auto;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+  
+}
+
+
+.AddNote form{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Asul', sans-serif;
+  /* width: 400px; */
+}
+.AddNote form input{
+  padding: 9px;
+  margin-top: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  font-family: 'Asul', sans-serif;
+ /* border-radius: 25px; */
+  
+  /* z-index: -9999; */
+}
+.AddNote form input::placeholder{
+  font-size: 22px;
+  
+}
+
+.AddNote form textarea{
+  padding: 9px;
+  /* margin-top: 14px; */
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+  font-family: 'Asul', sans-serif;
+  resize: none;
+  outline: none;
+}
+
+
+.AddNote form button{
+  position: absolute;
+  width: 40px;
+  background-color: white;
+  height: 40px;
+  bottom: -15px;
+  right: 25px;
+  border-radius: 25px;
+  color: orange ;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  
+
+}
+.AddNote form button:hover{
+  background-color: orange;
+  color: white;
+}
+.Note{
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  width: 300px;
+  max-height: 100%;
+  padding: 15px;
+  margin-left: 25px;
+  margin-top: 45px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: 'Asul', sans-serif;
+  /* overflow: scroll; */
+}
+.Note .mynotes{
+  width: 250px;
+}
+
+.Note .Delbtn{
+  position: absolute;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  right: 10px;
+  bottom: 12px;
+  color: orange;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.Note .Delbtn:hover{
+  background-color: orange;
+  color: white;
+
+}
+.Note .Notetitle{
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.notesDiv{
+  display: flex;
+  flex-wrap: wrap;
+}
